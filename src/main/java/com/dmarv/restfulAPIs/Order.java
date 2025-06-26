@@ -1,9 +1,13 @@
 package com.dmarv.restfulAPIs;
 
-public class Order {
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+public class Order {
+    @JsonProperty("customerName") //should match the name sent from postman or the frontEnd
     private String customerName;
+    @JsonProperty("productName")
     private String productName;
+    @JsonProperty("quantity")
     private int quantity;
 
     public String getCustomerName(){

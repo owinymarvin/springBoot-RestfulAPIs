@@ -20,4 +20,7 @@ public class FirstController {
     public String post(@RequestBody Order order ){
         return "Request Accepted and Order is:  " + order.toString();
     }
+
+    @PostMapping("/api/record")
+    public String record(){return "";}
 }
