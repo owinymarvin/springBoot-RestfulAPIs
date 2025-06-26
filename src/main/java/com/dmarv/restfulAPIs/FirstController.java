@@ -17,7 +17,7 @@ public class FirstController {
     }
 
     @PostMapping("/api/post")
-    public String post(@RequestBody String message){
-        return "Request Accepted: " + message;
+    public String post(@RequestBody Order order ){
+        return "Request Accepted and Order is:  " + order.toString();
     }
 }
